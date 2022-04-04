@@ -1,0 +1,45 @@
+.carouselMod{
+    padding: 5%;
+}
+
+.cardsProductos{
+    padding: 10%;
+}
+
+.parent {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.carrito {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    table{
+        border: 1px solid rgb(0, 0, 0)
+    }
+    td,tr {
+        padding: 20px;
+    }
+    tbody tr:nth-child(odd) {
+        background-color: #e44e09;
+      }
+    tbody tr:nth-child(even) {
+        background-color: #ffffff;
+      }
+    p{
+        padding-top: 5px;
+    }
+}
+
+#select{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
