@@ -41,9 +41,9 @@
     
     </header>
 
-        <div class="carrito">
+        <section class="carrito">
             <div>
-                <table id="carrito"></table>
+                <table id="carrito" class="table table-sm table-striped table-dark tablaCarrito"></table>
             </div>
             <div id="select">
                 <label for="select" >Tipo de Pago:</label>
@@ -52,7 +52,7 @@
                     <option value="2">MercadoPago</option>
                     <option value="3">Tarjeta</option>
                 </select>
-                <div>       
+                <div class="infoPagos">       
                 <p id="pagoEfectivo">(*) Pago en Efectivo 20% de descuento</p>
                 <p id="pagoMercado">(*) Pago con MercadoPago 10% de descuento</p>
                 <p id="pagoTarjeta">(*) Pago con Tarjeta 3 cuotas sin interes</p>
@@ -61,8 +61,7 @@
             <div> 
                 <button id="btnFinalizarCompra" class="btn btn-primary">FINALIZAR COMPRA</button>
             </div>
-        </div>
+          </section>
         <script src="./carrito.js"></script>
-    </article>
 </body>
 </html>

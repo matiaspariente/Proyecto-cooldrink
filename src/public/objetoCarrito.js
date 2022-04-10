@@ -23,6 +23,7 @@ class Carrito {
             item.push(busqueda.id)
             item.push(this.cantidad)
             item.push(busqueda.price)
+            item.push(busqueda.title)
             this.carrito.push(item) // agrego item al carrito  
             }   
         this.total += busqueda.price
@@ -32,6 +33,7 @@ class Carrito {
     cerrarCompra(){
         let mensajepago = ""
         const cierre = descuentos.find(descuentos=>descuentos.id == this.pago)
+        this.total = JSON.parse(localStorage.getItem('Total')) // tomo los valores del localstorage
         this.total = this.total * cierre.descuento
         mensajepago = cierre.mensaje + "   El total de la compra es $"+ this.total //genero el mensaje de salida que ira al alert
         //this.total=0 // reinicio los valores a 0 para nueva compra

@@ -1,9 +1,10 @@
 .carouselMod {
-  padding: 5%;
+  padding: 3%;
 }
 
 .cardsProductos {
-  padding: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 .parent {
@@ -20,33 +21,25 @@
 }
 
 .carrito {
-  padding-right: 20px !important;
-  padding-left: 20px !important;
+  padding: 50px;
 }
 
-.carrito table {
-  border: 1px solid black;
+.carrito #carrito {
+  padding: 50px;
+  width: 50%;
 }
 
-.carrito td, .carrito tr {
-  padding: 20px;
-}
-
-.carrito tbody tr:nth-child(odd) {
-  background-color: #e44e09;
-}
-
-.carrito tbody tr:nth-child(even) {
-  background-color: #ffffff;
-}
-
-.carrito p {
-  padding-top: 5px;
+.carrito th, .carrito td {
+  width: 100px;
 }
 
 #select {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.infoPagos {
+  padding-top: 1%;
 }
 
 /*!
